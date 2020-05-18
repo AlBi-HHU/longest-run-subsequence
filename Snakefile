@@ -1,6 +1,6 @@
 # config for string length scaling
-LENGTHS = list(range(20, 41, 10))
-ALPHABET_SIZES = [6, 10, 16]
+LENGTHS = list(range(20, 101, 10))
+ALPHABET_SIZES = [6, 10, 16, 20]
 # config for alphabet size scaling
 #LENGTHS = list(range(20, 81, 20))
 #ALPHABET_SIZES = list(range(6, 25, 2))
