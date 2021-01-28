@@ -8,7 +8,10 @@ Solution = namedtuple("Solution", ["size", "subsequences"])
 def run_to_string(s):
 	out = ""
 	for run in s:
-		out += run.char[0]*run.length
+		if isinstance(run.char, str):
+			out += run.char[0]*run.length
+		else:
+			out += str(run.char)[0]*run.length
 	return out
 
 

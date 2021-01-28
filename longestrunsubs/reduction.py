@@ -1,7 +1,7 @@
 from collections import defaultdict, namedtuple
 from itertools import product
 
-from src.util import Run, Solution, string_to_run, run_to_string
+from .util import Run, Solution, string_to_run, run_to_string
 
 
 def reduce_and_solve(s, solver, verbosity=0):
@@ -10,21 +10,16 @@ def reduce_and_solve(s, solver, verbosity=0):
 	Output: A solution object
 	'''
 	
-	if verbosity > 0:
+	if verbosity >= 1:
 		print("Solving instance: {} ({} runs, {} characters)".format(run_to_string(s), len(s), len(set([run.char for run in s]))))
 	
 	return reduce_concat(s, solver, verbosity)
 
 
 def solve_instance(s, solver, verbosity=0):
-	if verbosity > 0 and len(s) > 1:
+	if verbosity >= 1 and len(s) > 1:
 		print("Solving sub-instance: {} ({} runs, {} characters)".format(run_to_string(s), len(s), len(set([run.char for run in s]))))
-
-	### INSERT GENERIC SOLVER HERE ###
-	sol = solver(s)
-	##################################
-
-	return sol
+	return solver(s, verbosity=verbosity)
 
 
 def get_first_and_last_occurences(s):
