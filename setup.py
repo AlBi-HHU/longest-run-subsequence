@@ -8,7 +8,7 @@ setuptools.setup(
     version='1.0.0',
     author='Sven Schrinner, Manish Goel, Michael Wulfert, Philipp Spohr, Korbinian Schneeberger, Gunnar W. Klau',
     author_email='gunnar.klau@hhu.de',
-    description='Algorithm to determine to longest run subsequence.',
+    description='Algorithm to compute the longest run subsequence of a string.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/AlBi-HHU/longest-run-subsequence',
