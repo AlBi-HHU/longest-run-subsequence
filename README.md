@@ -1,4 +1,4 @@
-kkk# Longest Run Subsequence
+# Longest Run Subsequence
 
 Implementation of a solver for the Longest Run Subsequence Problem. Given a
 sequence as input, compute a longest subsequence such that there is at most
@@ -6,7 +6,7 @@ one run for every character.
 
 ## Example
 
-A longest run subsequence of the string `aababbbdccddd` is `aaabbbccddd`.  
+A longest run subsequence of the string `aababbbdccddd` is `aaabbbccddd`.
 
 ## Algorithms
 
