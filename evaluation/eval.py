@@ -3,7 +3,7 @@ import time
 import sys
 import resource
 
-from longestrunsubs import lrs, Solver
+from longestrunsubsequence import lrs, Solver
 
 def main(argv):
 	if len(argv) != 4:
